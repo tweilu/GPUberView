@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.dependency 'JSONModel', "~> 1.0"
   s.dependency 'Bolts', "~> 1.1"
   s.dependency "PulsingHalo"
-  s.dependency 'Masonry', '~> 0.6'
+  s.dependency 'Masonry', '~> 0.5.3'
   s.dependency 'INTULocationManager', '~> 2.0'
   s.dependency 'BlocksKit', '~> 2.2'
 
