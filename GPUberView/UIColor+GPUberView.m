@@ -12,9 +12,12 @@
 
 // takes @"#123456"
 + (UIColor *)colorWithHexString:(NSString *)str {
-    const char *cStr = [str cStringUsingEncoding:NSASCIIStringEncoding];
-    long x = strtol(cStr+1, NULL, 16);
-    return [UIColor colorWithHex:(UInt32)x];
+    if (str) {
+        const char *cStr = [str cStringUsingEncoding:NSASCIIStringEncoding];
+        long x = strtol(cStr+1, NULL, 16);
+        return [UIColor colorWithHex:(UInt32)x];
+    }
+    return [UIColor whiteColor];
 }
 
 // takes 0x123456
