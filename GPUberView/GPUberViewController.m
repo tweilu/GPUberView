@@ -239,7 +239,7 @@ static BOOL firstLoad = YES;
             [UIView animateWithDuration:0.2 animations:^{
                 self.navigationItem.titleView.alpha = 0;
             } completion:^(BOOL finished) {
-                self.navigationItem.titleView = [GPUberUtils titleLabelForController:self.navigationController text:@"Uber to %@", self.endName];
+                self.navigationItem.titleView = [GPUberUtils titleLabelForController:self.navigationController text:[NSString stringWithFormat:@"Uber to %@", self.endName]];
                 self.navigationItem.titleView.alpha = 0;
                 
                 [UIView animateWithDuration:0.3 animations:^{
